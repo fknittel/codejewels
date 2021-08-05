@@ -24,6 +24,10 @@ public class DBRequest {
         this.attributes = attributes;
     }
 
+    public Map<String, String> getAttributes() {
+        return attributes;
+    }
+
     public String getId() {
         return id;
     }

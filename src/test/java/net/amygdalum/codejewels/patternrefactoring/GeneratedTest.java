@@ -683,9 +683,9 @@ public class GeneratedTest {
         // Assert
         logger1.verify();
         assertThat(dBResponse1, new GenericMatcher() {
-            Object payload = null;
+            Object payload = "no offerId";
             String role = "allowed";
-            int status = 0;
+            int status = 422;
             String user = "allowed";
         }.matching(DBResponse.class));
         assertThat("expected no change, but was:", dBService1, new GenericMatcher() {
